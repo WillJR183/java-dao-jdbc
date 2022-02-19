@@ -37,7 +37,7 @@ public class Program {
 		sellerDao.insert(newSeller);
 		System.out.println("Inserted completed! New id = " + newSeller.getId());
 		
-		System.out.println("\n===== TEST 5: Seller insert =====");
+		System.out.println("\n===== TEST 5: Seller update =====");
 		seller = sellerDao.findById(10);
 		seller.setName("New Seller");
 		sellerDao.update(seller);
@@ -48,6 +48,7 @@ public class Program {
 		int id = sc.nextInt();
 		sellerDao.deleteById(id);
 		System.out.println("Delete completed!");
+		
 		sc.close();
 	}
 
